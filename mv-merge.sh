@@ -29,7 +29,6 @@ while true; do
       exit 0;;
     [nN]* ) echo "Skipping, done!";
       exit 0;;
-    * ) echo invalid response;
-      exit 1;;
+    * ) echo invalid response;;
   esac
 done
