@@ -14,7 +14,6 @@ DESTINATION=$(cleanpath ${2});
 
 echo Source: "${SOURCE}"
 echo Destination: "${DESTINATION}"
-exit;
 cd "${SOURCE}" || { echo "Source folder suddenly does not exist anymore..." ; exit 1;}
 find . -type d -exec echo Creating folder {} \; -exec mkdir -p "${DESTINATION}"/{} \;
 find . -type f -exec echo Moving {} \; -exec mv -u {} "${DESTINATION}"/{} \;
