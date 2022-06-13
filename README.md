@@ -4,7 +4,7 @@ The functionality that `mv` is missing!
 This small bash script adds merge functionality to mv, however in a serperate command, `mv-merge`.
 
 I was tired of having two folders with similar structure and `mv` simply saying 
-`mv: cannot move '<source>' to '<destination>'': Directory not empty`
+`mv: cannot move '<source>' to '<destination>': Directory not empty`
 
 Rsync took ages to do this task, and cp was stupid because it in the event the files were large, it would double the disk usage for duration of the move which is not always an option, and it was slow.
 ### Usage:
